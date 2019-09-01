@@ -6,7 +6,6 @@ window.onload = function() {
   var accesslevel = "&access_id=2";
   var status = "&status=published";
   var save = "&save=Save";
-  var code = document.getElementById("id1").innerHTML;
   var description = "&description=My Awesome Blog";
   var content =
     token + ts + title + description + accesslevel + status + guid + save;
